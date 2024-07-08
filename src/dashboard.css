@@ -1,0 +1,43 @@
+:root {
+  --banner-height: 64px;
+}
+.dashboard-container {
+  height: 100%;
+}
+.banner {
+  background-color: #fbf9f4;
+  box-shadow: 0px 0px 5px #cfc7ae;
+  color: black;
+  height: var(--banner-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin: 0 24px;
+}
+.profile-button {
+  margin: 0 24px;
+}
+.content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: top;
+  gap: min(32px, 5%);
+  box-sizing: border-box;
+  height: calc(100% - var(--banner-height));
+  padding: 24px 32px 0;
+}
+.search-container {
+  width: 20%;
+  max-width: 256px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+}
+.table-container {
+  width: 78%;
+  height: 100%;
+}
